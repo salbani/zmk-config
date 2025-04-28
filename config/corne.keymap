@@ -35,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL   &kp CARET    &kp LPAR  &kp RPAR  &kp APOS     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp DEL
-&trans  &kp QMARK  &kp PERCENT  &kp LBKT  &kp RBKT  &kp AT       &kp HASH   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans
-&trans  &kp AMPS   &kp DLLR     &kp LBRC  &kp RBRC  &kp GRAVE    &kp PIPE   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTRK  &trans
-                                &trans    &trans    &trans       &trans     &trans        &trans
+&trans  &kp EXCL   &kp CARET    &mt LBKT LBRC  &mt RBKT RBRC  &kp TILDE    &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp DEL
+&trans  &kp QMARK  &kp PERCENT  &mt LT LPAR    &mt GT RPAR    &kp AT       &kp HASH   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans
+&trans  &kp AMPS   &kp DLLR     &kp SQT        &kp DQT        &kp GRAVE    &kp PIPE   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTRK  &trans
+                                &trans         &trans         &trans       &trans     &trans        &trans
             >;
         };
 
