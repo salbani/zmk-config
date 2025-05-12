@@ -13,7 +13,11 @@
         gui_alt: gui_alt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp RGUI &kp LALT>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LALT>,
+                <&macro_release>,
+                <&kp LGUI &kp LALT>;
 
             label = "GUI_ALT";
         };
@@ -25,13 +29,17 @@
             label = "GUI_MULTI_TAP";
             #binding-cells = <0>;
             bindings = <&kp LGUI>, <&kp LALT>, <&gui_alt>;
+
+            tapping-term-ms = <500>;
         };
 
         alt_multi_tap: alt_multi_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "ALT_MULTI_TAP";
             #binding-cells = <0>;
-            bindings = <&kp LGUI>, <&kp LALT>, <&gui_alt>;
+            bindings = <&kp LALT>, <&kp LGUI>, <&gui_alt>;
+
+            tapping-term-ms = <500>;
         };
     };
 
