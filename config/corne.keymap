@@ -10,11 +10,12 @@
 
 / {
     macros {
-        gui_alt: new_macro {
+        gui_alt: gui_alt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LALT &kp RGUI>;
-            label = "NEW_MACRO";
+            bindings = <&macro_press>, <&kp RGUI &kp LALT>;
+
+            label = "GUI_ALT";
         };
     };
 
