@@ -9,26 +9,12 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    macros {
-        gui_alt: gui_alt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI &kp LALT>,
-                <&macro_release>,
-                <&kp LGUI &kp LALT>;
-
-            label = "GUI_ALT";
-        };
-    };
-
     behaviors {
         gui_multi_tap: gui_multi_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "GUI_MULTI_TAP";
             #binding-cells = <0>;
-            bindings = <&kp LGUI>, <&kp LALT>, <&gui_alt>;
+            bindings = <&kp LGUI>, <&kp LALT>, <&kp LG(LALT)>;
 
             tapping-term-ms = <500>;
         };
@@ -37,7 +23,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ALT_MULTI_TAP";
             #binding-cells = <0>;
-            bindings = <&kp LALT>, <&kp LGUI>, <&gui_alt>;
+            bindings = <&kp LALT>, <&kp LGUI>, <&kp LG(LALT)>;
 
             tapping-term-ms = <500>;
         };
