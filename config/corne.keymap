@@ -13,7 +13,7 @@
         gui_alt: gui_alt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp RGUI &kp LALT>;
+            bindings = <&macro_press>, <&kp RGUI &kp LALT>, <&macro_release>;
 
             label = "GUI_ALT";
         };
