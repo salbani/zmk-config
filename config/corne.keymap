@@ -16,7 +16,7 @@
             #binding-cells = <0>;
             bindings = <&kp LGUI>, <&kp LALT>, <&kp LG(LALT)>;
 
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
         };
 
         alt_multi_tap: alt_multi_tap {
@@ -25,7 +25,7 @@
             #binding-cells = <0>;
             bindings = <&kp LALT>, <&kp LGUI>, <&kp LG(LALT)>;
 
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
         };
     };
 
